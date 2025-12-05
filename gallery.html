@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры наших работ — Domostroy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Dom<span>ostroy</span></a>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Единый hero-блок, как на других страницах -->
+    <div class="container">
+        <section class="hero">
+            <h1>Примеры наших работ</h1>
+            <p>Более 200 построенных домов по всей России — от уютных коттеджей до просторных загородных резиденций.</p>
+        </section>
+
+        <!-- Слайдер (стили — в styles.css) -->
+        <div class="slider-container">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="https://avatars.mds.yandex.net/i?id=6dbda95ab448c36d46108224355a2fe53dffaa36941676ae-12421090-images-thumbs&n=13" alt="Дом из кирпича">
+                    <div class="slide-caption">Кирпичный дом, 140 м², Подмосковье</div>
+                </div>
+                <div class="slide">
+                    <img src="photo/1.jpg" alt="Деревянный дом">
+                    <div class="slide-caption">Деревянный дом из бруса, 110 м², Тверская область</div>
+                </div>
+                <div class="slide">
+                    <img src="photo/2.jpg" alt="Современный дом">
+                    <div class="slide-caption">Современный дом с панорамными окнами, 180 м²</div>
+                </div>
+                <div class="slide">
+                    <img src="photo/3.jpg" alt="Дом с террасой">
+                    <div class="slide-caption">Дом с террасой и гаражом, 160 м²</div>
+                </div>
+                <div class="slide">
+                    <img src="photo/4.jpg" alt="Загородный дом">
+                    <div class="slide-caption">Загородная резиденция, 220 м², участок 15 соток</div>
+                </div>
+            </div>
+            <button class="slider-btn prev" onclick="changeSlide(-1)">‹</button>
+            <button class="slider-btn next" onclick="changeSlide(1)">›</button>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="contact.html" class="btn">Заказать дом мечты</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Domostroy. Все права защищены.<br>
+        <a href="mailto:info@domostroy.ru">info@domostroy.ru</a> | +7 (495) 123-45-67</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
